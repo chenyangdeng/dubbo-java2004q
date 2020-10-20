@@ -1,5 +1,5 @@
-import com.sofwin.service.UserService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import service.UserService;
 
 import java.io.IOException;
 

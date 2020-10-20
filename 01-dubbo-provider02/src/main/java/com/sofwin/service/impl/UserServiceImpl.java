@@ -1,6 +1,6 @@
 package com.sofwin.service.impl;
 
-import com.sofwin.service.UserService;
+import service.UserService;
 
 public class UserServiceImpl implements UserService {
 

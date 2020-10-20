@@ -12,5 +12,5 @@
     <!--将服务暴露
         interface：用于指定暴露服务的类型
         ref：用于指定暴露的内容-->
-    <dubbo:service interface="com.sofwin.service.UserService" ref="userService"/>
+    <dubbo:service interface="service.UserService" ref="userService"/>
 </beans>

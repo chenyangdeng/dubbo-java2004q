@@ -12,5 +12,5 @@
         url：指定远程调用的地址
         id：指定远程调用后bean的id
         -->
-    <dubbo:reference interface="com.sofwin.service.UserService" url="localhost:20880" id="userService"/>
+    <dubbo:reference interface="service.UserService" url="localhost:20880" id="userService"/>
 </beans>

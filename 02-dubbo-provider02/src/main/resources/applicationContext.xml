@@ -1,0 +1,22 @@
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
+    <!--提供方应用信息，用于计算依赖关系-->
+    <dubbo:application name="dubbo-provider02"/>
+    <!--服务提供者协议配置-->
+    <dubbo:protocol port="-1" name="dubbo"/>
+    <!--直连式不使用注册中心
+        address:N/A代表直连
+                :zookeeper://ip:端口号
+                :redis://ip:端口号
+    -->
+    <dubbo:registry address="zookeeper://192.168.13.10:2181" protocol="zookeeper"/>
+    <!--UserSerivce服务的IOC-->
+    <bean id="userService" class="com.sofwin.service.impl.UserServiceImpl"/>
+    <!--将服务暴露
+        interface：用于指定暴露服务的类型
+        ref：用于指定暴露的内容-->
+    <dubbo:service interface="service.UserService" ref="userService"/>
+</beans>

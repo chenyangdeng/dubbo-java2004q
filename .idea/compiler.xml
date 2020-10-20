@@ -9,6 +9,9 @@
         <module name="01-dubbo-provider" />
         <module name="01-dubbo-comsumer" />
         <module name="01-dubbo-provider02" />
+        <module name="02-dubbo-provider01" />
+        <module name="service-api" />
+        <module name="02-dubbo-provider02" />
       </profile>
     </annotationProcessing>
   </component>

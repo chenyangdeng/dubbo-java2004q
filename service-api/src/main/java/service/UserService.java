@@ -1,4 +1,4 @@
-package com.sofwin.service;
+package service;
 
 public interface UserService {
 
